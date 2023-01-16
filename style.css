@@ -1,0 +1,39 @@
+
+        body{
+          margin: 2%;  
+         border: solid 1px lightgrey;
+         
+         
+        }
+
+       .header{
+        border-bottom: solid 1px lightgrey ;
+       }
+
+       .radio{
+        background-color: darkgray;
+        border-radius: 3px;
+        padding: 5px 0px 10px 10px;
+        
+       
+
+       }
+       .bizum{
+        width: 25px;
+        padding-left: 0;
+
+       }
+
+       #textarea{
+        height: 100px;
+
+       }
+       .AmEx{
+        width: 30px;
+
+       }
+       .botton{
+        border-top: solid 1px lightgrey 
+
+       }
+    
