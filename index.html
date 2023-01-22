@@ -20,24 +20,38 @@
       Some field are missing
     </div>
 
+
+
   <div class="container-fluid">
 
-    <form class="row g-3 needs-validation" novalidate method="get" >
+    <form class="row g-3 needs-validation" novalidate method="get" action="#" >
     <div class="col-5 ">
       <label class="form-label h5" >Card #</label>
       <input type="password" placeholder="xxxxxxx" required  class="form-control" id="card" >
+    
+      <div class="invalid-feedback">
+        Pleasecoplit field.
+      </div>
     </div>
     
     <div class="col-4 ">
         <label class="form-label  fw-bold" >CVC # </label>
         <input type="text" placeholder="0000" required class="form-control" id="cvc" >
+        <div class="invalid-feedback">
+          Please coplit field.
+        </div>
+      
       </div>
 
       <div class="col-3">
         <label class="form-label h5">Amount</label>
-        <div class="input-group h5">
-        $<input type="text" class="form-control" required  placeholder="Amount" >
-      </div>
+        <div class="input-group">
+          <span  class="h-5 fw-bold" id="inputGroupPrepend">$</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Please coplit field.
+          </div>
+        </div>
       </div>
 
 
@@ -45,23 +59,33 @@
       <div class="col-6 ">
         <label  class="form-label h5">First Name</label>
         <input type="text" class="form-control" id="firstname" required  >
+        <div class="invalid-feedback">
+          Please coplit field.
+        </div>
       </div>
       
       <div class="col-6 ">
           <label  class="form-label h5">Last Name</label>
           <input type="text" class="form-control" id="lastname" required>
+          <div class="invalid-feedback">
+            Please coplit field.
+          </div>
         </div>
         
 
         <div class="col-6">
           <label  class="form-label h5">City</label>
           <input type="text" class="form-control" required id="city">
+          <div class="invalid-feedback">
+            Please coplit field.
+          </div>
         </div>
         
        
             <div class="col-3">
             <label for="SelectState" class="form-label h5">State</label>
             <select id="SelectState" required class="form-select">
+              <option selected disabled value="">Choose...</option>
               <option value="GB">United Kingdom</option>
                             <option value="AL">Albania</option>
                             <option value="AD">Andorra</option>
@@ -112,15 +136,22 @@
                             <option value="CH">Switzerland</option>
                             <option value="TR">Turkey</option>
             </select>
+
+            <div class="invalid-feedback">
+              Please Choose State.
+            </div>
           </div>
     
           <div class="col-3">
             <label  class="form-label h5">Postal Code</label>
             <input type="text" class="form-control" id="postCo" required >
+            <div class="invalid-feedback">
+              Please coplit field.
+            </div>
+
         </div>
        
     
-  
 
           <div class="col-6 ">
             <div >
@@ -136,37 +167,40 @@
           </div>
 
           <div class="form-check form-check-inline ">
-            <input class="form-check-input" type="radio" name="accept" id="visa" value="visa">
+            <input class="form-check-input" type="radio" required name="accept" id="visa" value="visa">
             <label class="form-check-label" for="visa">
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpElEQVR4nO3Wz4uOURQH8A8pFiyk/Mg0pCSlxDs7K5qUUhaDhZIFXlasmLKSZhYsNAtNzZIyU2OhDM3/MJGNlVlMDRaUFErIjG596VnOs3ifd/HOt27d873nnu9zz3PvuZdV9ArOYgYvO9ye4cw/0Sv4ihG0O9xG8C1987jUYHbbeFs6SxhoUHggmpbRalC4Fc0eF16Lg7EPVJw3hNuLvvQ3ZWwPTuEYNlbmHMLhlQoX7MKj8OWoFZyPfQuP09+HYfyJXdqF+B+pcNvDrSjVZRWzeBi7FJdfCfIKP7EOX7CIndiPbfGfjk+JfbKO8Bp8wDg2J8iT8N/xJn6vM3+yItqP37iXsdt1hAum8B5X4zOYoMv5iIIdeB7uXf773WRna7gXdYUvZuxTqltZ7fFwd7C+4vs0fCkOn/EjtbmUx491hXdXNsiNcNdin8N9LGAuqZ2sZOdBNt5M7P46wgXXE2BL7KOxy5E6gTFMYChHsdxyN7PxZMMNZxG1hDuBVu8KL3XrWpzH5W48BNo5b6MNPH1Go/V/oafzEGvisTfUYHZXoXv4C/mUuzkz+zqjAAAAAElFTkSuQmCC">
             </label>
+            
           </div>
 
 
           <div class="form-check form-check-inline ">
-            <input class="form-check-input" type="radio" name="accept" id="express" value="express">
+            <input class="form-check-input" type="radio" required name="accept" id="express" value="express">
             <label class="form-check-label" for="express">
-              <img class="AmEx" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZ0gIY8bCVFrmKRuA9ZnvV1tcIqkp8S44TQ&usqp=CAU">
-              
+              <img class="AmEx" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeZ0gIY8bCVFrmKRuA9ZnvV1tcIqkp8S44TQ&usqp=CAU">   
             </label>
           </div>
+
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="accept" id="bizum" value="bizum">
+            <input class="form-check-input" type="radio" required name="accept" id="bizum" value="bizum">
             <label class="form-check-label" for="bizum">
             <img class="bizum" src="  data:image/jpeg;base64,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">
-
             </label>
-          </div>
 
           </div>
         </span>
+        
+      
+          </div>
+     
         
 
 
       
         <div class="col-6 ">
           <label  class="form-label  h5">Menssage</label>
-          <textarea class="form-control " id="textarea" ></textarea>
+          <textarea class="form-control " id="textarea"></textarea>
           <div>
             <p style="color:gray;">Add any notes here</p>
 
