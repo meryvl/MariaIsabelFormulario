@@ -19,10 +19,10 @@
     <div class="alert alert-danger m-3 fw-bold" role="alert">
       Some field are missing
     </div>
-<form  method="get" >
-  <div class="container-fluid">
-<div class="row">
 
+  <div class="container-fluid">
+
+    <form class="row g-3 needs-validation" novalidate method="get" >
     <div class="col-5 ">
       <label class="form-label h5" >Card #</label>
       <input type="password" placeholder="xxxxxxx" required  class="form-control" id="card" >
@@ -42,9 +42,6 @@
 
 
 
-      <div class="container-fluid">
-  <div class="row ">
-  
       <div class="col-6 ">
         <label  class="form-label h5">First Name</label>
         <input type="text" class="form-control" id="firstname" required  >
@@ -54,11 +51,7 @@
           <label  class="form-label h5">Last Name</label>
           <input type="text" class="form-control" id="lastname" required>
         </div>
-        <div class="container-fluid">
-
-          
-
-        <div class="row">
+        
 
         <div class="col-6">
           <label  class="form-label h5">City</label>
@@ -126,8 +119,7 @@
             <input type="text" class="form-control" id="postCo" required >
         </div>
        
-        <div class="container-fluid">
-        <div class="row">
+    
   
 
           <div class="col-6 ">
@@ -183,7 +175,7 @@
         
         <div class=" d-flex justify-content-end bg-light py-2 botton ">
           <button type="button" class="btn btn-secondary btn-lg m-1 " id="cancel">Cancel</button>
-          <button type="button" class="btn btn-primary btn-lg m-1 " id="send">Send</button>
+          <button type="submit" class="btn btn-primary btn-lg m-1 " id="send">Send</button>
         </div>
         
         </div>
@@ -204,7 +196,7 @@
            
         
        
-           
+     <script src="./script.js"></script>       
 
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
