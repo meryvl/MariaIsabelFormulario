@@ -30,7 +30,7 @@
       <div  class="row g-3" >
       <div class="col-5 ">
       <label class="form-label h5" >Card #</label>
-      <input type="password" placeholder="xxxxxxx" required name="card" class="form-control" id="card" >
+      <input type="text" maxlength="16" required name="card" class="form-control" id="card" >
     
       <div class="invalid-feedback">
         Please coplit field.
@@ -39,7 +39,7 @@
     
     <div class="col-4 ">
         <label class="form-label  fw-bold" >CVC # </label>
-        <input type="text" placeholder="0000" name="cvc" required class="form-control" id="cvc" >
+        <input type="text"   placeholder="000" maxlength="3" name="cvc" required class="form-control" id="cvc" >
         <div class="invalid-feedback">
           Please coplit field.
         </div>
@@ -50,7 +50,7 @@
         <label class="form-label h5">Amount</label>
         <div class="input-group">
           <span  class="fs-3  fw-bold" id="inputGroupPrepend">$</span>
-          <input type="text" class="form-control border rounded" name="Amount" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <input type="text" maxlength="16" class="form-control border rounded" name="Amount" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
           <div class="invalid-feedback">
             Please coplit field.
           </div>
