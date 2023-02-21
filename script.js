@@ -11,7 +11,7 @@
   Array.prototype.slice.call(forms)
     .forEach(function (form) {
       form.addEventListener('submit', function (event) {
-        if (forms == forms.length == 0 || forms === null ) {
+        if (!form.checkValidity() ) {
           event.preventDefault()
           event.stopPropagation()
           alert.innerHTML = ` <div class="alert alert-danger m-2  fw-bold alert-none-valid" role="alert">
