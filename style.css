@@ -2,15 +2,18 @@
         body{
           margin: 2%;  
          border: solid 1px lightgrey;
-         
+        
          
         }
 
        .header{
         border-bottom: solid 1px lightgrey ;
+        
        }
 
-      
+      form{
+        background: rgba(0, 0, 255, 0.404)
+      }
 
        
       
